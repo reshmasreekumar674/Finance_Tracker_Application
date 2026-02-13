@@ -2,7 +2,7 @@ def load_data():
     transactions = []
 
     try:
-        with open(r"C:\Users\harip\OneDrive\Documents\GitHub\Finance_Tracker_Application\data.txt", "r") as file:
+        with open(r"C:\Users\harip\OneDrive\Documents\GitHub\Finance_Tracker_Application\data.csv", "r") as file:
             next(file)  
             lines = file.readlines()
 
@@ -24,7 +24,7 @@ def load_data():
                         transactions.append(transaction)
 
     except FileNotFoundError:
-        print("data.txt file not found.")
+        print("data.csv file not found.")
 
     return {"transactions": transactions}
 
