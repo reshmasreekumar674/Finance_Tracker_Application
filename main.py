@@ -15,6 +15,95 @@ default_catagories = ["Food", "Transport", "Rent", "Utilities", "Entertainment",
 
 transactions = []
 
+
+def main():
+    """Main menu"""
+    while True:
+        print("""
+=============================
+      Finance Tracker
+=============================
+  1. Add Transaction
+  2. View Transactions
+  3. Edit Transaction
+  4. Delete Transaction
+  5. Manage Budgets
+  6. View Reports
+ 10. Exit
+        """)
+        choice = input("Select an option: ").strip()
+        if choice == "1":
+            add_transaction()
+        elif choice == "2":
+            view_transactions()
+        elif choice == "3":
+            edit_transaction()
+        elif choice == "4":
+            delete_transaction()
+        elif choice == "5":
+            manage_budgets()
+        elif choice == "6":
+            view_reports()
+        elif choice == "10":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid option. Please select from the menu.\n")
+
+def manage_budgets():
+    """Manage budgets"""
+    while True:
+        print("\n--- Manage Budgets ---")
+        print("""
+  1. View Budget
+  2. Edit Budget
+  3. Exit
+        """)
+        choice = input("Enter your choice (1-3): ").strip()
+        if choice == "1":
+            view_budget()
+        elif choice == "2":
+            edit_budget()
+        elif choice == "3":
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 3.")
+
+
+def view_reports():
+    """View reports"""
+    while True:
+        print("\n--- View Reports ---")
+        print("""
+  1. Monthly Summary
+  2. Category Summary
+  3. Budget Tracking
+  4. Top Spending Categories
+  5. Exit
+        """)
+        choice = input("Enter your choice (1-5): ").strip()
+        if choice == "1":
+            monthly_summary()
+        elif choice == "2":
+            category_summary()
+        elif choice == "3":
+            budget_tracking()
+        elif choice == "4":
+            top_spending_categories()
+        elif choice == "5":
+            return
+        else:
+            print("Invalid choice.")
+
+
+def budget_tracking():
+    print("\n--- Budget Tracking ---")
+
+
+def top_spending_categories():
+    print("\n--- Top Spending Categories ---")
+
+
 def add_transaction():
     """Add transaction manually or from CSV file"""
     print("\n--- Add Transaction ---")
@@ -388,24 +477,6 @@ def edit_transaction():
             print("Invalid input. Enter 'y' or 'n'.")
 
 
-def manage_budgets():
-    """Manage budgets"""
-    while True:
-        print("\n--- Manage Budgets ---")
-        print("""
-  1. View Budget
-  2. Edit Budget
-  3. Exit
-        """)
-        choice = input("Enter your choice (1-3): ").strip()
-        if choice == "1":
-            view_budget()
-        elif choice == "2":
-            edit_budget()
-        elif choice == "3":
-            break
-        else:
-            print("Invalid choice. Please enter a number between 1 and 3.")
 
 
 def view_budget():
@@ -457,72 +528,6 @@ def monthly_summary():
 def category_summary():
     print("\n--- Category Summary ---")
 
-
-def main():
-    while True:
-        print("""
-=============================
-      Finance Tracker
-=============================
-  1. Add Transaction
-  2. View Transactions
-  3. Edit Transaction
-  4. Delete Transaction
-  5. Manage Budgets
-  6. View Reports
- 10. Exit
-        """)
-        choice = input("Select an option: ").strip()
-        if choice == "1":
-            add_transaction()
-        elif choice == "2":
-            view_transactions()
-        elif choice == "3":
-            edit_transaction()
-        elif choice == "4":
-            delete_transaction()
-        elif choice == "5":
-            manage_budgets()
-        elif choice == "6":
-            view_reports()
-        elif choice == "10":
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid option. Please select from the menu.\n")
-
-
-def view_reports():
-    while True:
-        print("\n--- View Reports ---")
-        print("""
-  1. Monthly Summary
-  2. Category Summary
-  3. Budget Tracking
-  4. Top Spending Categories
-  5. Exit
-        """)
-        choice = input("Enter your choice (1-5): ").strip()
-        if choice == "1":
-            monthly_summary()
-        elif choice == "2":
-            category_summary()
-        elif choice == "3":
-            budget_tracking()
-        elif choice == "4":
-            top_spending_categories()
-        elif choice == "5":
-            return
-        else:
-            print("Invalid choice.")
-
-
-def budget_tracking():
-    print("\n--- Budget Tracking ---")
-
-
-def top_spending_categories():
-    print("\n--- Top Spending Categories ---")
 
 
 if __name__ == "__main__":
