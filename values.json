@@ -1,0 +1,11 @@
+{
+    "budgets": {
+        "Food": 700.0,
+        "Transport": 200,
+        "Rent": 1000,
+        "Utilities": 150,
+        "Entertainment": 100,
+        "Salary": 3000,
+        "Miscellaneous": 50
+    }
+}
