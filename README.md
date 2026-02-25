@@ -2,7 +2,7 @@
 # Finance Tracker Application
 
 A command-line  menu driven finance management application built in Python.
-This tool allows users to track income and expenses, manage budgets, import transactions from CSV files, and generate financial reports.
+This tool allows users to track income and expenses, manage budgets, import transactions from CSV file, and generate financial reports.
 
 # Features
 

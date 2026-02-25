@@ -523,7 +523,7 @@ def edit_budget() -> None:
 
 def monthly_summary():
     print("\n--- Monthly Summary ---")
-
+    
 
 def category_summary():
     print("\n--- Category Summary ---")
