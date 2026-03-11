@@ -1,11 +1,25 @@
 {
+    "categories": {
+        "items": [
+            "Food",
+            "Transport",
+            "Rent",
+            "Utilities",
+            "Entertainment",
+            "Salary",
+            "Miscellaneous",
+            "Shopping",
+            "Medical"
+        ]
+    },
     "budgets": {
-        "Food": 700.0,
+        "Food": 500,
         "Transport": 200,
         "Rent": 1000,
         "Utilities": 150,
         "Entertainment": 100,
-        "Salary": 3000,
-        "Miscellaneous": 50
+        "Shopping": 3000,
+        "Miscellaneous": 50,
+        "Medical": 800.0
     }
 }

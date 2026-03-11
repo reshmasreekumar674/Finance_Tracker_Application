@@ -19,6 +19,9 @@ This tool allows users to track income and expenses, manage budgets, import tran
 
 * Python 3.8+
 
+* Install ReportLab
+ py -m pip install reportlab
+
 
 
 
