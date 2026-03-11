@@ -42,9 +42,9 @@ def main():
     """Main menu"""
     while True:
         print("""
-=============================
-      Finance Tracker
-=============================
+   ===========================================================================================
+                                       FINANCE TRACKER
+   ===========================================================================================
   1. Add Transaction
   2. View Transactions
   3. Edit Transaction
@@ -639,9 +639,9 @@ def full_monthly_report():
 
     # Display available months
     print("""
-    ==========================================
-              FULL MONTHLY REPORT
-    ==========================================
+    ===========================================================================================
+                                       FULL MONTHLY REPORT
+    ===========================================================================================
     """)
     print("\nAvailable Months:")
     for i, month in enumerate(months, start=1):
@@ -660,9 +660,9 @@ def full_monthly_report():
     filtered = [t for t in transactions if t["date"][:7] == selected_month] #Filters transactions by slicing each date to YYYY/MM and comparing to the selected month.
 
     print(f"""
-    ==============================================
-             FULL REPORT — {selected_month}
-    ==============================================
+    ===========================================================================================
+                               FULL MONTHLY REPORT — {selected_month}
+    ===========================================================================================
     """)
 
     _monthly_summary(filtered)
@@ -682,7 +682,10 @@ def _monthly_summary(filtered):
     total_expenses = sum(t["amount"] for t in filtered if t["type"] == "expense")
     savings = total_income - total_expenses
 
-    print("\n=================================== Monthly Summary ===================================")
+    print("""
+    =================================== Monthly Summary ==============================
+    """)
+
     print(f"  Total Income:    {total_income:>10.2f}$")
     print(f"  Total Expenses:  {total_expenses:>10.2f}$")
     print(f"  Savings:         {savings:>10.2f}$")
@@ -690,7 +693,10 @@ def _monthly_summary(filtered):
 
 def _category_summary(filtered):
     """Category summary section"""
-    print("\n=================================== Category Summary ===================================")
+    print("""
+    =================================== Category Summary ==============================
+    """)
+   
     print(f"  {'Category':<20} {'Income':>10}  {'Expenses':>10}")
     print(f"  {'-'*20} {'-'*10}  {'-'*10}")
 
@@ -723,7 +729,9 @@ def _budget_tracking(filtered):
         print("No budgets set. Please set budgets first.")
         return
 
-    print("\n=================================== Budget Tracking===================================")
+    print("""
+    =================================== Budget Tracking=================================
+    """)
     print(f"  {'Category':<15} {'Budget':>8}  {'Spent':>8}  {'Used':>6}  Status")
     print(f"  {'-'*15} {'-'*8}  {'-'*8}  {'-'*6}  {'-'*20}")
 
@@ -751,7 +759,9 @@ def _top_spending_categories(filtered):
 
     sorted_categories = sorted(category_totals.items(), key=lambda x: x[1], reverse=True) #.items() returns (category, total) tuples. key=lambda x: x[1] sorts by the total (second element). reverse=True puts highest spender first
 
-    print("\n=================================== Top Spending Categories ===================================")
+    print("""
+    ============================= Top Spending Categories =============================
+    """)
     for rank, (category, total) in enumerate(sorted_categories, start=1):#enumerate provides the rank number. Tuple unpacking (category, total) directly from each item. {rank}. creates the numbered list format.
         print(f"  {rank}. {category:<20} {total:.2f}$")
     print()
