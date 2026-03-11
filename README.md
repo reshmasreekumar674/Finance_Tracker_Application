@@ -23,13 +23,13 @@ This tool allows users to track income and expenses, manage budgets, import tran
 # CSV Import Format
 
 The CSV file must include these exact headers:
-si,date,amount,category,description,type
+id,date,amount,category,description,type
 
 
 Example:
-si,date,amount,category,description,type
-2025/01/05,1200,Salary,January Salary,income
-2025/01/10,50,Food,Groceries,expense
+id,date,amount,category,description,type
+1,2025/01/05,1200,Salary,January Salary,income
+2,2025/01/10,50,Food,Groceries,expense
 
 
 Validation rules:
@@ -54,9 +54,6 @@ Validation rules:
 
 * Transactions are appended to data.csv file
 * Budgets are stored in values.json file
-
-
-
 
 # Report Generation
 
