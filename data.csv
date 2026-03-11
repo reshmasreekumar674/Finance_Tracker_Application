@@ -31,3 +31,13 @@ id,date,amount,category,description,type
 2580,2026/02/22,200.0,Medical,Insurance,expense
 3583,2026/02/08,35.0,Entertainment,Movie tickets,expense
 4947,2026/02/09,900.0,Transport,Uber ride,expense
+2991,2025/12/01,3000.0,Salary,December salary,income
+1357,2025/12/02,120.0,Food,Supermarket shopping,expense
+8641,2025/12/03,40.0,Transport,Bus ticket,expense
+5700,2025/12/05,150.0,Utilities,Electricity bill,expense
+7012,2025/12/07,60.0,Entertainment,Movie,expense
+6820,2025/12/10,300.0,Shopping,Clothes purchase,expense
+4434,2025/12/12,200.0,Medical,Pharmacy purchase,expense
+7797,2025/12/15,900.0,Rent,House rent,expense
+1050,2025/12/22,150.0,Rent,House rent,expense
+3117,2026/02/02,250.0,Food,Food purchase,expense
