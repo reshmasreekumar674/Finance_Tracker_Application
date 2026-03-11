@@ -19,11 +19,6 @@ This tool allows users to track income and expenses, manage budgets, import tran
 
 * Python 3.8+
 
-* Install ReportLab
- py -m pip install reportlab
-
-
-
 
 # CSV Import Format
 
@@ -68,4 +63,5 @@ Validation rules:
 * Monthly summary 
 * Category wise spending 
 * Budget tracking 
+* Top Spending Category
 
